@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Current Exchanger</title>
+</head>
+<body>
+  <img src="img/money.png" alt="images" class="money-img">
+  <h1>Exchange Rate Calculator</h1>
+  <p>Choose the currency and the amount To get the Exchange Rate</p>
+ 
+  <div class="container">
+  <div class="currency">
+    <select id="currency-one">
+      <option value="AED">AED</option>
+          <option value="ARS">ARS</option>
+          <option value="AUD">AUD</option>
+          <option value="BGN">BGN</option>
+          <option value="BRL">BRL</option>
+          <option value="BSD">BSD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CLP">CLP</option>
+          <option value="CNY">CNY</option>
+          <option value="COP">COP</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="DOP">DOP</option>
+          <option value="EGP">EGP</option>
+          <option value="EUR">EUR</option>
+          <option value="FJD">FJD</option>
+          <option value="GBP">GBP</option>
+          <option value="GTQ">GTQ</option>
+          <option value="HKD">HKD</option>
+          <option value="HRK">HRK</option>
+          <option value="HUF">HUF</option>
+          <option value="IDR">IDR</option>
+          <option value="ILS">ILS</option>
+          <option value="INR">INR</option>
+          <option value="ISK">ISK</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="KZT">KZT</option>
+          <option value="MXN">MXN</option>
+          <option value="MYR">MYR</option>
+          <option value="NOK">NOK</option>
+          <option value="NZD">NZD</option>
+          <option value="PAB">PAB</option>
+          <option value="PEN">PEN</option>
+          <option value="PHP">PHP</option>
+          <option value="PKR">PKR</option>
+          <option value="PLN">PLN</option>
+          <option value="PYG">PYG</option>
+          <option value="RON">RON</option>
+          <option value="RUB">RUB</option>
+          <option value="SAR">SAR</option>
+          <option value="SEK">SEK</option>
+          <option value="SGD">SGD</option>
+          <option value="THB">THB</option>
+          <option value="TRY">TRY</option>
+          <option value="TWD">TWD</option>
+          <option value="UAH">UAH</option>
+          <option value="USD" selected>USD</option>
+          <option value="UYU">UYU</option>
+          <option value="VND">VND</option>
+          <option value="ZAR">ZAR</option>
+          <option value="UGX">UGX </option>
+    </select>
+    <input type="number" id="amount-one" placeholder="0" value="1">
+  </div>
+  <div class="swap-rate-container">
+    <button class="btn" id="swap">  SWAP <i class="fa-solid fa-arrows-rotate"></i>
+    </button>
+    <div class="rate" id="rate"></div>
+    </div>
+
+    <div class="currency">
+      <select id="currency-two">
+        <option value="AED">AED</option>
+        <option value="ARS">ARS</option>
+        <option value="AUD">AUD</option>
+        <option value="BGN">BGN</option>
+        <option value="BRL">BRL</option>
+        <option value="BSD">BSD</option>
+        <option value="CAD">CAD</option>
+        <option value="CHF">CHF</option>
+        <option value="CLP">CLP</option>
+        <option value="CNY">CNY</option>
+        <option value="COP">COP</option>
+        <option value="CZK">CZK</option>
+        <option value="DKK">DKK</option>
+        <option value="DOP">DOP</option>
+        <option value="EGP">EGP</option>
+        <option value="EUR">EUR</option>
+        <option value="FJD">FJD</option>
+        <option value="GBP">GBP</option>
+        <option value="GTQ">GTQ</option>
+        <option value="HKD">HKD</option>
+        <option value="HRK">HRK</option>
+        <option value="HUF">HUF</option>
+        <option value="IDR">IDR</option>
+        <option value="ILS">ILS</option>
+        <option value="INR">INR</option>
+        <option value="ISK">ISK</option>
+        <option value="JPY">JPY</option>
+        <option value="KRW">KRW</option>
+        <option value="KZT">KZT</option>
+        <option value="MXN">MXN</option>
+        <option value="MYR">MYR</option>
+        <option value="NOK">NOK</option>
+        <option value="NZD">NZD</option>
+        <option value="PAB">PAB</option>
+        <option value="PEN">PEN</option>
+        <option value="PHP">PHP</option>
+        <option value="PKR">PKR</option>
+        <option value="PLN">PLN</option>
+        <option value="PYG">PYG</option>
+        <option value="RON">RON</option>
+        <option value="RUB">RUB</option>
+        <option value="SAR">SAR</option>
+        <option value="SEK">SEK</option>
+        <option value="SGD">SGD</option>
+        <option value="THB">THB</option>
+        <option value="TRY">TRY</option>
+        <option value="TWD">TWD</option>
+        <option value="UAH">UAH</option>
+        <option value="USD">USD</option>
+        <option value="UYU">UYU</option>
+        <option value="VND">VND</option>
+        <option value="ZAR">ZAR</option>
+        <option value="UGX"selected>UGX</option> 
+      </select>
+      <input type="number" id="amount-two" placeholder="0">
+    </div>
+  </div>
+     <div class="Box">
+      <div class="box1">
+        <img src="img/5989837708731728820_121.jpg" class="ahmed">
+      </div>
+      <div class="box2">
+        <h1>This project was designed and Building by</h1>
+        <p>Eng Ahmed Mo. Ali</p>
+        <a href="https://www.facebook.com/engahmedmohamed.ali.90/reels/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/the_qadavi?igsh=bHFvemc2NzV4ZGVp&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/axmed-maxamed-a06b362ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a> 
+      </div>
+     </div>
+   <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+:root{
+  --primary-color:rgba(1, 125, 250, 0.467);
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(#FFEFBA,#FFFFFF);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+h1{
+  /* color: var(--primary-color); */
+  color: #FF6500;
+  font-weight: 900;
+ font-family: sans-serif;
+}
+h1:hover{
+  color: #1E3E62;
+  cursor: pointer;
+}
+p{
+  text-align: center;
+  color: #1E3E62;
+  font-weight: bold;
+}
+p:hover{
+color: #FF6500;
+cursor: pointer;
+}
+.btn{
+  /* background-color: var(--primary-color); */
+  background-color: #FF6500;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  width: 100px;
+  height: 30px;
+  font-weight: bolder;
+}
+.money-img{
+  width: 150px;
+}
+.currency{
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.currency select{
+  padding: 10px 20px 10px 20px;
+  --moz-appearance:none;
+  --webkit-appearance:none;
+  appearance: none;
+  border: 1px solid orange;
+  font-size: 16px;
+  background: transparent;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+ background-position: right 10px top 50%, 0, 0;
+ background-size: 12px auto, 100%;
+ background-repeat: no-repeat;
+}
+.currency input{
+  /* border: 10px; */
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+  border: 1px solid #1E3E62;
+  margin-left: 10px;
+}
+.swap-rate-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rate{
+  color: #FF6500;
+  font-size: 24px;
+  padding: 0 10px;
+  font-weight: bolder;
+  opacity: 50%;
+}
+select:focus,
+input:focus,
+button:focus{
+  outline: none;
+
+}
+.Box{
+  width: 800px;
+  height: 200px;
+  background-color: none;
+  /* border: 1px solid #1E3E62; */
+  display: flex;
+}
+.box1{
+  width: 150px;
+  height: 150px;
+  background-color: #FF6500;
+  border-radius: 100px;
+  /* border: 2px solid #FF6500; */
+  margin: 10px;
+
+}
+.box1 img{
+  width: 150px;
+  height: 150px;
+  border-radius: 260px;
+  background-position: 10px 30px;
+  border: 2px solid #FF6500;
+  transition: 0.2s;;
+
+}
+.box1 img:hover{
+  transform: scale(1.2);
+  transition: ease-in-out;
+  cursor: pointer;
+}
+.box2 h1{
+  font-size: 19px;
+  text-align: center;
+  margin: auto;
+  margin-top: 60px;
+  word-spacing: 10px;
+  font-weight: 100;
+}
+.box2 p {
+  /* word-spacing: 1rem; */
+  line-height: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+
+}
+.box2 i{
+  font-size: 24px;
+  text-align: center;
+  color: #1E3E62;
+  margin-left: 15%;
+  font-weight: 700;
+}
+.box2 i:hover{
+  color: #FF6500;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px; /* Example of reducing font size */
+    padding: 0 10px;
+  }
+
+  .btn {
+    width: 80px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  .money-img {
+    width: 120px;
+  }
+
+  .currency select,
+  .currency input {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .rate {
+    font-size: 20px;
+  }
+  
+  .Box {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .box1 {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+
+  .box1 img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .box2 h1 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .box2 p {
+    font-size: 18px;
+    line-height: 8px;
+  }
+
+  .box2 i {
+    font-size: 20px;
+    margin-left: 10%;
+  }
+}
+
